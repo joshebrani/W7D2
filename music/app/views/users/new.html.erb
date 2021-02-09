@@ -1,1 +1,25 @@
-<form action="<%=users_url %>">method</form>
+
+<body>
+<h1>Music App</h1>
+    
+
+<h2>Create User</h2>
+
+<form action="<%= new_session_url %>">
+<button>Log in</button>
+</form>
+
+
+<form action="<%=users_url %>"method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">  
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="user[email]">
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="user[password]">
+
+    <button>Sign Up!</button>
+</form>
+
+</body>

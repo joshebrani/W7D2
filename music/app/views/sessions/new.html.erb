@@ -1,1 +1,24 @@
 <h1>Music App</h1>
+
+<h2>Log In</h2>
+
+<a href="<%= new_user_url %>">
+<button>Sign up</button>
+</a>
+
+
+
+<form action="<%=session_url %>"method="POST">
+
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">  
+
+    <label for="email">Email
+    <input type="text" id="email" name="user[email]">
+    </label>
+    
+    <label for="password">Password
+    <input type="password" id="password" name="user[password]">
+    </label>
+
+    <button>Log In!</button>
+</form>

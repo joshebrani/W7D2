@@ -1,3 +1,29 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    font-style: italic;
+    color: yellow;
+}
+
+h2 {
+    
+    color: lightblue;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+button {
+    background-color: cornflowerblue;
+    border: 2px solid red;
+    border-radius: 100px;
+}
